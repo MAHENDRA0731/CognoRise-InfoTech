@@ -19,7 +19,7 @@ public class NumberGuessGame{
     public static void playGameUtil(int userInput,int rightAnswer,int currentTry){
         
         if(rightAnswer==userInput){
-            System.out.println("You guessed the number ("+rightAnswer+") correctly in "+currentTry+" tries");
+            System.out.println("You guessed the number ("+rightAnswer+") correctly in "+currentTry+" try");
             return;
         }
 
@@ -32,7 +32,6 @@ public class NumberGuessGame{
         else{
             if(userInput<rightAnswer){
                 System.out.print("Guess Higher Number: ");
-                
             }
             else if(userInput>rightAnswer){
                 System.out.print("Guess lower Number: "); 
